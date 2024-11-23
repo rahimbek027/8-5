@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="max-w-4xl mx-auto bg-white p-6 shadow-lg rounded-lg mt-10">
@@ -38,12 +40,12 @@ export default function Home() {
         </ul>
       </section>
       <nav className="text-center mt-6">
-        <a
+        <Link
           href="/about"
           className="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
         >
           Learn more about us
-        </a>
+        </Link>
       </nav>
     </main>
   );
